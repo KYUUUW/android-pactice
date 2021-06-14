@@ -13,5 +13,9 @@ class MainActivity : AppCompatActivity() {
         button.setOnClickListener {
             Toast.makeText(applicationContext, "Button pushed", Toast.LENGTH_LONG).show()
         }
+
+        button2.setOnClickListener {
+            val input1 = input1.text.toString()
+            output1.text = "결과: $input1"
+        }
     }
-}
